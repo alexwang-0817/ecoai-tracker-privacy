@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EcoAI Tracker 隱私權政策</title>
+<meta name="description" content="EcoAI Tracker Chrome 擴充功能之隱私權政策。資料僅儲存於使用者本機，不上傳任何伺服器。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700&display=swap">
+<style>
+  :root {
+    --paper:#F7F9FA; --surface:#FFFFFF; --surface-2:#EFF3F5;
+    --ink:#14191E; --ink-2:#3C4750; --muted:#6B7880;
+    --rule:#DCE3E7; --rule-strong:#C2CDD3;
+    --accent:#0B6B72; --accent-2:#E4F1F1;
+    --ok:#2C6E49; --ok-bg:#E3F0E8; --stop:#8C3A3A;
+    --f-display:'Noto Serif TC','Songti TC',serif;
+    --f-body:'Noto Sans TC','PingFang TC',system-ui,sans-serif;
+    --f-mono:'SF Mono',Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper:#0E1317; --surface:#161C21; --surface-2:#1D252B;
+      --ink:#E6EDF1; --ink-2:#B4C1CA; --muted:#8797A2;
+      --rule:#2A343B; --rule-strong:#3A464F;
+      --accent:#5BC4CC; --accent-2:#173234;
+      --ok:#7FC49B; --ok-bg:#172A20; --stop:#D98686;
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:var(--f-body); font-size:16px; line-height:1.85;
+    margin:0; padding:0 20px 96px; -webkit-font-smoothing:antialiased;
+  }
+  .page{max-width:760px; margin:0 auto}
+
+  header{padding:64px 0 28px; border-bottom:2px solid var(--ink)}
+  .eyebrow{
+    font-family:var(--f-mono); font-size:12px; letter-spacing:.16em;
+    text-transform:uppercase; color:var(--accent); margin:0 0 14px;
+  }
+  h1{
+    font-family:var(--f-display); font-size:clamp(28px,5vw,38px);
+    line-height:1.3; margin:0 0 16px; text-wrap:balance;
+  }
+  .meta{
+    font-family:var(--f-mono); font-size:12.5px; color:var(--muted);
+    display:flex; flex-wrap:wrap; gap:6px 28px; margin-top:20px;
+  }
+  .meta b{color:var(--ink); font-weight:500}
+
+  .lead{
+    background:var(--ok-bg); border-left:3px solid var(--ok);
+    padding:20px 24px; margin:36px 0 44px; border-radius:0 3px 3px 0;
+    font-size:17px; color:var(--ink);
+  }
+  .lead b{color:var(--ok)}
+
+  h2{
+    font-family:var(--f-display); font-size:21px; margin:48px 0 4px;
+    padding-bottom:10px; border-bottom:1px solid var(--rule-strong);
+    display:flex; align-items:baseline; gap:12px;
+  }
+  h2 .n{
+    font-family:var(--f-mono); font-size:12px; font-weight:500;
+    color:var(--accent); flex:none;
+  }
+  h3{font-size:16px; margin:28px 0 8px}
+  p{margin:14px 0; color:var(--ink-2)}
+  ul{margin:14px 0; padding-left:22px; color:var(--ink-2)}
+  li{margin-bottom:8px}
+  strong{color:var(--ink)}
+  code{
+    font-family:var(--f-mono); font-size:14px;
+    background:var(--surface-2); padding:1px 5px; border-radius:2px;
+  }
+  a{color:var(--accent)}
+
+  .tw{overflow-x:auto; border:1px solid var(--rule); border-radius:3px; background:var(--surface); margin:18px 0}
+  table{border-collapse:collapse; width:100%; font-size:14.5px; min-width:520px}
+  th,td{text-align:left; padding:11px 15px; border-bottom:1px solid var(--rule); vertical-align:top}
+  th{
+    font-size:12px; font-family:var(--f-mono); letter-spacing:.06em;
+    color:var(--muted); font-weight:500; background:var(--surface-2); white-space:nowrap;
+  }
+  tbody tr:last-child td{border-bottom:0}
+
+  .never{display:grid; gap:12px; margin:18px 0}
+  .never div{
+    border-left:2px solid var(--stop); padding:2px 0 2px 15px;
+    font-size:15px; color:var(--ink-2);
+  }
+  .never b{display:block; color:var(--ink)}
+
+  .fill{
+    background:var(--accent-2); color:var(--accent);
+    padding:1px 6px; border-radius:2px; font-family:var(--f-mono); font-size:14px;
+  }
+
+  footer{
+    margin-top:64px; padding-top:22px; border-top:1px solid var(--rule);
+    font-size:13.5px; color:var(--muted);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <p class="eyebrow">Chrome 擴充功能</p>
+  <h1>EcoAI Tracker 隱私權政策</h1>
+  <div class="meta">
+    <span>版本 <b>2.0.0</b></span>
+    <span>生效日 <b><span class="fill">［填入上架日期］</span></b></span>
+    <span>最後更新 <b><span class="fill">［填入上架日期］</span></b></span>
+  </div>
+</header>
+
+<p class="lead">
+  <b>本擴充功能所產生的全部資料，只儲存在您自己的瀏覽器裡。</b>
+  它沒有宣告任何連線至外部伺服器的權限，因此在技術上就無法將資料傳送出去。
+  資料何時交給研究者、交出哪一份，完全由您自己按下匯出按鈕決定。
+</p>
+
+<h2><span class="n">一</span>本工具的用途</h2>
+<p>
+  EcoAI Tracker 是一項學術研究所使用的資料蒐集工具，用於了解使用者與生成式 AI
+  互動時的行為型態。它只在 <code>gemini.google.com</code> 上運作，
+  記錄提示詞層級的<strong>數值與計數</strong>，供研究分析使用。
+</p>
+<p>
+  本工具不販售、不含廣告、不進行任何商業用途，亦不用於使用者剖析、
+  行為追蹤廣告或信用評分等目的。
+</p>
+
+<h2><span class="n">二</span>蒐集哪些資料</h2>
+<p>所蒐集者皆為數值、計數與時間戳，共四類：</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>類別</th><th>內容</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>去識別化編號</td>
+      <td>由研究者發放之編號（如 S001），由您首次使用時自行填入。不含姓名、學號或任何可直接識別之資訊。</td>
+    </tr>
+    <tr>
+      <td>行為計數</td>
+      <td>字元數、估算權杖數、貼上次數、編輯次數、附件件數與類型、對話輪數、撰寫耗時等純數值。</td>
+    </tr>
+    <tr>
+      <td>時間戳</td>
+      <td>每則訊息送出的本機時間（含時區偏移），以及每日是否使用之紀錄。</td>
+    </tr>
+    <tr>
+      <td>介面狀態</td>
+      <td>本工具自身所顯示之提示元素當下的狀態代碼。</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>
+  對話的識別碼會先與一組安裝時隨機產生、僅存在於您裝置上的字串混合，
+  再以 SHA-256 雜湊後才儲存。該隨機字串不會隨資料匯出，
+  因此研究者無法據以還原出任何一則對話的網址。
+</p>
+<p>
+  完整的欄位清單（共 58 欄）與逐欄說明，可向研究者索取資料字典文件。
+</p>
+
+<h2><span class="n">三</span>明確不蒐集的項目</h2>
+<div class="never">
+  <div><b>提示詞與回應的文字內容</b>文字僅經過計數函式量測，回傳值只有數字，文字本身不被保留。連文字的雜湊值都不記錄——短文本可由雜湊反推，故雜湊不構成去識別化。</div>
+  <div><b>可直接識別個人之資訊</b>姓名、學號、電子郵件、電話、IP 位址、裝置識別碼、Google 帳號資訊，一律不讀取、不儲存。</div>
+  <div><b>《個人資料保護法》第 6 條之特種個人資料</b>病歷、醫療、基因、性生活、健康檢查、犯罪前科，一項都沒有。</div>
+  <div><b>附件的檔名與內容</b>僅讀取檔案類型（如圖片、PDF），不讀取檔名，不解碼內容。</div>
+  <div><b>剪貼簿內容</b>僅記錄貼上的字元數量，不讀取貼上了什麼。</div>
+  <div><b>瀏覽紀錄與其他網站</b>本工具只在 <code>gemini.google.com</code> 上運作，不讀取其他分頁、不記錄造訪過哪些網站。</div>
+  <div><b>螢幕截圖或任何影像</b>本工具不具備擷取畫面之能力。</div>
+</div>
+
+<h2><span class="n">四</span>資料儲存於何處</h2>
+<p>
+  全部資料儲存於<strong>您自己瀏覽器的本機資料庫</strong>（IndexedDB），
+  不上傳至任何伺服器，亦不與任何第三方共享、交換或販售。
+</p>
+<p>
+  這不僅是承諾，也是技術事實：本擴充功能的權限宣告只有
+  <code>storage</code>（本機儲存）與 <code>alarms</code>（每日計時）兩項，
+  <strong>不具備任何連線至外部伺服器的權限</strong>。
+  任何人都可以檢視擴充功能中的 <code>manifest.json</code> 自行驗證這一點。
+</p>
+
+<h2><span class="n">五</span>資料如何交給研究者</h2>
+<p>
+  由您主動操作：開啟擴充功能的選項頁面，按下匯出按鈕，
+  瀏覽器會產生一個壓縮檔並下載到您的電腦，再由您依研究者指示上傳至指定位置。
+</p>
+<p>
+  匯出前，選項頁面提供<strong>預覽功能</strong>，可以看到完整的欄位名稱與
+  最新的實際資料內容。您可以在確認內容之後再決定是否交出。
+</p>
+
+<h2><span class="n">六</span>權限說明</h2>
+<div class="tw">
+<table>
+  <thead><tr><th>權限</th><th>用途</th></tr></thead>
+  <tbody>
+    <tr><td><code>storage</code></td><td>將計數結果儲存於本機瀏覽器。若無此權限，資料無法保存。</td></tr>
+    <tr><td><code>alarms</code></td><td>每日記錄一次「工具當日是否運作」，用以區分「未使用」與「工具故障」。</td></tr>
+    <tr><td>存取 <code>gemini.google.com</code></td><td>本工具唯一運作的頁面。用於偵測訊息送出並計算字元數。未列出其他任何網站。</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2><span class="n">七</span>資料保存與刪除</h2>
+<ul>
+  <li>資料保存於您的瀏覽器中，直到您移除本擴充功能為止。</li>
+  <li><strong>移除擴充功能即會一併刪除全部資料</strong>，此為瀏覽器的標準行為。</li>
+  <li>您可以隨時停用或移除本擴充功能，不需要通知任何人。</li>
+  <li>已匯出並交付給研究者的資料，其保存期限與銷毀方式，依研究計畫之知情同意書規定辦理。</li>
+</ul>
+
+<h2><span class="n">八</span>您的權利</h2>
+<ul>
+  <li><strong>知悉</strong>——本頁與資料字典文件列出全部欄位。</li>
+  <li><strong>查閱</strong>——透過選項頁的預覽功能，隨時檢視自己的資料。</li>
+  <li><strong>拒絕與退出</strong>——隨時移除本擴充功能即可，不影響您的任何權益。</li>
+  <li><strong>刪除</strong>——移除擴充功能即刪除本機資料；若欲刪除已交付之資料，請聯絡研究者。</li>
+</ul>
+
+<h2><span class="n">九</span>聯絡方式</h2>
+<p>
+  研究計畫名稱：<span class="fill">［填入計畫名稱］</span><br>
+  研究者：<span class="fill">［填入姓名與系所］</span><br>
+  聯絡信箱：<span class="fill">［填入聯絡信箱］</span><br>
+  倫理審查核准編號：<span class="fill">［填入 IRB 編號］</span>
+</p>
+
+<h2><span class="n">十</span>政策變更</h2>
+<p>
+  本政策如有修改，將更新本頁最上方的「最後更新」日期。
+  涉及蒐集範圍變動之修改，將另行通知參與者。
+</p>
+
+<footer>
+  EcoAI Tracker v2.0.0　·　本頁為 Chrome 線上應用程式商店所要求之隱私權政策。
+</footer>
+
+</div>
+</body>
+</html>
